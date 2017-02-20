@@ -1,1 +1,3 @@
-# Assignment-3.4
+1. Explain the importance of Namenode in Hadoop cluster?
+
+Namenode is stores the metadata which has the directory tree of all files in the file system, and tracks the files across the cluster. Namenode does not store actual data of the metadata but the it stores the the list of blocks and location of the blocks of all the files located on the HDFS. Namenode is highly important in a cluster as it is a master daemon  in HDFS and if the namenode crashes then the cluster is considered as down for that period of time. Name node is single point of failure and is usually configured with lot of memory(RAM).
